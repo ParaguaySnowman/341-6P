@@ -46,18 +46,14 @@ content-type: application/json
 }
 
 ### Delete Transaction Test: Don't forget to update object ID!
-DELETE http://localhost:8080/transaction/63e815d28dd5b41dedd20cd2 HTTP/1.1
+DELETE http://localhost:8080/transaction/63e8666502b983e0f25f7081 HTTP/1.1
 
-/////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////
-
-//RENDER ROUTES
 
 ### Get Transaction Test
-GET https://cse341-week-6-personal-assignment.onrender.com/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
+GET https://cse-341-week-6-personal-assignment.onrender.com/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
 
 ### Post Transaction Test
-POST https://cse341-week-6-personal-assignment.onrender.com/transaction HTTP/1.1
+POST https://cse-341-week-6-personal-assignment.onrender.com/transaction HTTP/1.1
 content-type: application/json
 
 {
@@ -71,7 +67,7 @@ content-type: application/json
 }
 
 ### Change Transaction Test
-PUT https://cse341-week-6-personal-assignment.onrender.com/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
+PUT https://cse-341-week-6-personal-assignment.onrender.com/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
 content-type: application/json
 
 {
@@ -85,7 +81,7 @@ content-type: application/json
 }
 
 ### Revert Change Change Transaction Test
-PUT https://cse341-week-6-personal-assignment.onrender.com/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
+PUT https://cse-341-week-6-personal-assignment.onrender.com/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
 content-type: application/json
 
 {
@@ -99,4 +95,4 @@ content-type: application/json
 }
 
 ### Delete Transaction Test: Don't forget to update object ID!
-DELETE https://cse341-week-6-personal-assignment.onrender.com/transaction/63e815d28dd5b41dedd20cd2 HTTP/1.1
+DELETE https://cse-341-week-6-personal-assignment.onrender.com/transaction/63e815d28dd5b41dedd20cd2 HTTP/1.1
