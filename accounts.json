@@ -1,0 +1,9 @@
+{
+    "accounts":
+        {
+        "id": "000001",
+        "institution": "Some Bank",
+        "number": "0000000001",
+        "nickname": "Personal Checking Account"
+        }
+}

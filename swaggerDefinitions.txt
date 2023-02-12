@@ -1,0 +1,45 @@
+"definitions": {
+	"accounts": {
+		"type": "object",
+		"properties": {
+			"id": {
+				"type": "number"
+			},
+			"institution": {
+				"type": "string"
+			},
+			"number": {
+				"type": "number"
+			},
+			"nickname": {
+				"type": "string"
+			}
+		}
+	},
+	"transactions": {
+		"type": "object",
+		"properties": {
+			"amount": {
+				"type": "number"
+			},
+			"date": {
+				"type": "string"
+			},
+			"merchant": {
+				"type": "string"
+			},
+			"category": {
+				"type": "string"
+			},
+			"description": {
+				"type": "string"
+			},
+			"account": {
+				"type": "number"
+			},
+			"tax-related": {
+				"type": "boolean"
+			}
+		}
+	}
+}

@@ -1,0 +1,102 @@
+//LOCAL HOST ROUTES
+
+### Get Transaction Test
+GET http://localhost:8080/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
+
+### Post Transaction Test
+POST http://localhost:8080/transaction HTTP/1.1
+content-type: application/json
+
+{
+  "amount": "1.01",
+  "date": "1/1/2000",
+  "merchant": "Walmart",
+  "category": "groceries",
+  "description": "null",
+  "account": "101",
+  "taxRelated": "true"
+}
+
+### Change Transaction Test
+PUT http://localhost:8080/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
+content-type: application/json
+
+{
+  "amount": "1.02",
+  "date": "2/2/2002",
+  "merchant": "Sam's Club",
+  "category": "Petty Cash",
+  "description": "null2",
+  "account": "202",
+  "taxRelated": "false"
+}
+
+### Revert Change Change Transaction Test
+PUT http://localhost:8080/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
+content-type: application/json
+
+{
+  "amount": "1.01",
+  "date": "1/1/2000",
+  "merchant": "Walmart",
+  "category": "groceries",
+  "description": "null",
+  "account": "101",
+  "taxRelated": "true"
+}
+
+### Delete Transaction Test: Don't forget to update object ID!
+DELETE http://localhost:8080/transaction/63e815d28dd5b41dedd20cd2 HTTP/1.1
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+//RENDER ROUTES
+
+### Get Transaction Test
+GET https://cse341-week-5-personal-assignment.onrender.com/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
+
+### Post Transaction Test
+POST https://cse341-week-5-personal-assignment.onrender.com/transaction HTTP/1.1
+content-type: application/json
+
+{
+  "amount": "1.01",
+  "date": "1/1/2000",
+  "merchant": "Walmart",
+  "category": "groceries",
+  "description": "null",
+  "account": "101",
+  "taxRelated": "true"
+}
+
+### Change Transaction Test
+PUT https://cse341-week-5-personal-assignment.onrender.com/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
+content-type: application/json
+
+{
+  "amount": "1.02",
+  "date": "2/2/2002",
+  "merchant": "Sam's Club",
+  "category": "Petty Cash",
+  "description": "null2",
+  "account": "202",
+  "taxRelated": "false"
+}
+
+### Revert Change Change Transaction Test
+PUT https://cse341-week-5-personal-assignment.onrender.com/transaction/63e05d1e4b81be01fcb1946a HTTP/1.1
+content-type: application/json
+
+{
+  "amount": "1.01",
+  "date": "1/1/2000",
+  "merchant": "Walmart",
+  "category": "groceries",
+  "description": "null",
+  "account": "101",
+  "taxRelated": "true"
+}
+
+### Delete Transaction Test: Don't forget to update object ID!
+DELETE https://cse341-week-5-personal-assignment.onrender.com/transaction/63e815d28dd5b41dedd20cd2 HTTP/1.1

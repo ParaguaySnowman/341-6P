@@ -1,0 +1,13 @@
+{
+    "transactions":
+     {
+        "amount":"0.00",
+        "date": "1/1/2000",
+        "merchant": "Walmart",
+        "category": "Groceries",
+        "sub-category": "Food",
+        "description": "some description",
+        "account": "000001",
+        "tax-related": "true"
+      }
+  }
